@@ -1,0 +1,14 @@
+<html>
+    <head>  
+        <title>Coffee</title>
+    </head>
+    <body>
+        
+        <a href="/">Home</a>
+        <a href="/log_in">Log in</a>
+        <a href="{%url 'create_user'%}">Register</a>
+        <a href="{% url 'review_form' %}">Write a review</a>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>

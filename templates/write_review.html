@@ -1,0 +1,11 @@
+
+{% extends 'index.html' %}
+{% block body %}
+    <form method="post" action="{% url 'review_form' %}">
+        {% csrf_token %}
+        <input type="text" id="title" name="title">
+        <input type="text" id="context" name="context">
+        <button type="submit">Send</button>
+
+    </form>
+{% endblock body %}
