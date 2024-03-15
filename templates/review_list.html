@@ -1,0 +1,18 @@
+
+{% extends 'index.html' %}
+{% block body %}
+    
+    <ul>    
+        {%for review in reviews%}
+
+            <li style="border: solid">
+                <h2>{{review.title}}</h2>
+                User: {{review.author.username}}
+                <br>
+                Context: {{review.context}}
+                <br>
+            </li>
+            <br>
+        {%endfor%}
+    </ul>
+{% endblock body %}
